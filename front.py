@@ -15,9 +15,9 @@ if uploaded_file is not None:
     st.success(f"Arquivo '{uploaded_file.name}' carregado com sucesso!")
 
     # Criar um botão para fazer o download do arquivo carregado
-    st.write("Clique no botão abaixo para baixar o arquivo processado:")
+    st.write("Clique no botão abaixo para baixar o resumo dos arquivos:")
     st.download_button(
-        label="Baixar Arquivo",
+        label="Baixar Resumo",
         data=uploaded_file.getvalue(),
         file_name=uploaded_file.name,
         mime="application/zip"
